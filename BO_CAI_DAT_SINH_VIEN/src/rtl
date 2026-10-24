@@ -6,3 +6,8 @@ module top (
     input wire       din_demux, // Ngõ vào dữ liệu cho DEMUX
     output wire      y_mux,     // Ngõ ra của MUX
     output wire [7:0] y_demux   // 8 ngõ ra của DEMUX )
+
+    assign y_mux = d_in[sel];
+    assign y_demux = (1 << sel) & {8{din_demux}};
+
+endmodule
