@@ -18,3 +18,6 @@ module tb_top;
         .y_mux(y_mux),
         .y_demux(y_demux)
     );
+initial begin
+        $dumpfile("sim.vcd");
+        $dumpvars(0, tb_top);
