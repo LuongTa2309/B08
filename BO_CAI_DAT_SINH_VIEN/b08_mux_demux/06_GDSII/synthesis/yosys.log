@@ -360,6 +360,6 @@ Removed 0 unused cells and 11 unused wires.
 17.2. Executing DEMUXMAP pass.
 Dumping module `\b08_mux_demux'.
 
-End of script. Logfile hash: ce52bed953, CPU: user 0.04s system 0.01s, MEM: 17.05 MB peak
+End of script. Logfile hash: ce52bed953, CPU: user 0.04s system 0.01s, MEM: 16.81 MB peak
 Yosys 0.52 (git sha1 fee39a3284c90249e1d9684cf6944ffbbcbb8f90)
-Time spent: 24% 13x opt_expr (0 sec), 18% 7x read_verilog (0 sec), ...
+Time spent: 23% 13x opt_expr (0 sec), 19% 7x read_verilog (0 sec), ...
