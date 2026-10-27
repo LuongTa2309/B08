@@ -10,7 +10,7 @@ module tb_rtl;
     wire [7:0] demux_out;
 
     // Ket noi module thiet ke chinh (DUT) vao testbench
-    rtl uut (
+    b08_mux_demux uut (
         .mux_in(mux_in),
         .sel(sel),
         .demux_in(demux_in),
@@ -26,9 +26,10 @@ module tb_rtl;
         //TEST CA CHUAN
         // Quet sel tu 0 den 7, test mau dich bit (walking ones) cho MUX va DEMUX
         mux_in = 8'h01; demux_in = 1'b1;
-        for (sel = 3'b000; sel <= 3'b111; sel = sel + 1) begin
-            #10; // Cho 10ns de mach on dinh tin hieu
-        end
+        for (sel = 3'b000; sel < 3'b111; sel = sel + 1) begin
+    #10;
+end
+sel = 3'b111; #10; // Chay not gia tri cuoi
 
         // Thu them cac mau dich bit khac
         mux_in = 8'h04; #10;
