@@ -19,8 +19,9 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y iverilog
 
-    - name: Run Simulation
+    - name: Run official testbench
       run: |
-        cd "BO_CAI_DAT_SINH_VIEN/src"
-        iverilog -o sim.vvp rtl.v testbench.v
-        vvp sim.vvp
+        cd BO_CAI_DAT_SINH_VIEN/b08_mux_demux
+        iverilog -g2012 -o sim.vvp rtl/b08_mux_demux.v tb/b08_reference.sv tb/b08_tb.sv
+        vvp sim.vvp | tee log.txt
+        grep -q "validation PASS" log.txt

@@ -1,7 +1,7 @@
 {
-    "DESIGN_NAME": "counter_4bit",
-    "VERILOG_FILES": ["dir::../rtl/counter_4bit.v"],
-    "CLOCK_PORT": "clk",
+    "DESIGN_NAME": "top",
+    "VERILOG_FILES": ["dir::../rtl/top.v"],
+    "CLOCK_PORT": null,
     "CLOCK_PERIOD": 10,
     "FP_SIZING": "absolute",
     "DIE_AREA": [0, 0, 100, 100],
