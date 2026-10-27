@@ -26,7 +26,7 @@ module counter_4bit (
         if (!rst_n) begin
             count <= 4'b0000;
         end else if (en) begin
-            count <= count + 4'b0010;
+            count <= count + 4'b0001;
         end else begin
             count <= count;
         end

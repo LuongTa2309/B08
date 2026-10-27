@@ -1,0 +1,2 @@
+Yosys 0.52 (git sha1 fee39a3284c90249e1d9684cf6944ffbbcbb8f90)
+Che do: Tong hop cong logic chung (Generic)

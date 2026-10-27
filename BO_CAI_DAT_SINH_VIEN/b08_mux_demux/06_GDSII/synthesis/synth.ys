@@ -1,0 +1,17 @@
+read_verilog -sv rtl/b08_demux_only.v
+read_verilog -sv rtl/b08_mux_demux.v
+read_verilog -sv rtl/b08_mux_only.v
+hierarchy -check -top b08_mux_demux
+proc
+opt
+fsm
+opt
+memory
+opt
+techmap
+opt
+setundef -zero
+splitnets
+opt_clean -purge
+tee -o 06_GDSII/synthesis/synth_stat.txt stat
+write_verilog -noattr 06_GDSII/synthesis/netlist.v
