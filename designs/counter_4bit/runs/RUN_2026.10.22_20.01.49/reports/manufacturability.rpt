@@ -1,0 +1,19 @@
+Design Name: counter_4bit
+Run Directory: /openlane/designs/counter_4bit/runs/RUN_2026.10.22_20.01.49
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openlane/designs/counter_4bit/runs/RUN_2026.10.22_20.01.49/reports/signoff/drc.rpt
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /openlane/designs/counter_4bit/runs/RUN_2026.10.22_20.01.49/logs/signoff/39-counter_4bit.lef.lvs.log
+Number of nets: 30                         |Number of nets: 30                         
+Design is LVS clean.
+----------------------------------------
+
+Antenna Summary:
+Source: /openlane/designs/counter_4bit/runs/RUN_2026.10.22_20.01.49/logs/signoff/41-arc.log
+Pin violations: 0
+Net violations: 0

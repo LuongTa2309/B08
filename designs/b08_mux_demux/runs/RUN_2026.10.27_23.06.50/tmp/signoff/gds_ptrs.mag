@@ -1,0 +1,6 @@
+<< properties >>
+string FIXED_BBOX 0 0 20000 20000
+string GDS_END 374116
+string GDS_FILE /openlane/designs/b08_mux_demux/runs/RUN_2026.10.27_23.06.50/results/signoff/tt_um_b08_mux_demux.magic.gds
+string GDS_START 102248
+<< end >>

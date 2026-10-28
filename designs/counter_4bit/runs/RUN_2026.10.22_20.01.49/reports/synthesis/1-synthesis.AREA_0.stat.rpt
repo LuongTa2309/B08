@@ -1,0 +1,26 @@
+
+61. Printing statistics.
+
+=== counter_4bit ===
+
+   Number of wires:                 14
+   Number of wire bits:             17
+   Number of public wires:           4
+   Number of public wire bits:       7
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 14
+     sky130_fd_sc_hd__a31o_2         1
+     sky130_fd_sc_hd__and2_2         1
+     sky130_fd_sc_hd__and2b_2        1
+     sky130_fd_sc_hd__and4_2         1
+     sky130_fd_sc_hd__buf_1          2
+     sky130_fd_sc_hd__dfrtp_2        4
+     sky130_fd_sc_hd__nand2_2        1
+     sky130_fd_sc_hd__or2_2          1
+     sky130_fd_sc_hd__xnor2_2        1
+     sky130_fd_sc_hd__xor2_2         1
+
+   Chip area for module '\counter_4bit': 192.684800
+

@@ -1,0 +1,19 @@
+Design Name: tt_um_b08_mux_demux
+Run Directory: /openlane/designs/b08_mux_demux/runs/RUN_2026.10.27_23.06.50
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openlane/designs/b08_mux_demux/runs/RUN_2026.10.27_23.06.50/reports/signoff/drc.rpt
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /openlane/designs/b08_mux_demux/runs/RUN_2026.10.27_23.06.50/logs/signoff/39-tt_um_b08_mux_demux.lef.lvs.log
+Number of nets: 88                         |Number of nets: 88                         
+Design is LVS clean.
+----------------------------------------
+
+Antenna Summary:
+Source: /openlane/designs/b08_mux_demux/runs/RUN_2026.10.27_23.06.50/logs/signoff/41-arc.log
+Pin violations: 0
+Net violations: 0

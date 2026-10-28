@@ -1,0 +1,194 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= Typical Corner ===================================
+
+Startpoint: uio_in[0] (input port clocked by clk)
+Endpoint: uo_out[0] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                          2.00    2.00 ^ input external delay
+                  0.02    0.01    2.01 ^ uio_in[0] (in)
+     1    0.00                           uio_in[0] (net)
+                  0.02    0.00    2.01 ^ input9/A (sky130_fd_sc_hd__buf_1)
+                  0.09    0.11    2.12 ^ input9/X (sky130_fd_sc_hd__buf_1)
+     3    0.01                           net9 (net)
+                  0.09    0.00    2.12 ^ _14_/A (sky130_fd_sc_hd__buf_2)
+                  0.11    0.18    2.30 ^ _14_/X (sky130_fd_sc_hd__buf_2)
+    10    0.02                           _00_ (net)
+                  0.11    0.00    2.30 ^ _32_/S (sky130_fd_sc_hd__mux2_1)
+                  0.05    0.33    2.62 v _32_/X (sky130_fd_sc_hd__mux2_1)
+     1    0.00                           _11_ (net)
+                  0.05    0.00    2.62 v _34_/A2 (sky130_fd_sc_hd__mux4_1)
+                  0.08    0.49    3.12 v _34_/X (sky130_fd_sc_hd__mux4_1)
+     1    0.00                           _13_ (net)
+                  0.08    0.00    3.12 v _35_/A (sky130_fd_sc_hd__buf_1)
+                  0.02    0.10    3.22 v _35_/X (sky130_fd_sc_hd__buf_1)
+     1    0.00                           net13 (net)
+                  0.02    0.00    3.22 v output13/A (sky130_fd_sc_hd__clkbuf_4)
+                  0.08    0.18    3.40 v output13/X (sky130_fd_sc_hd__clkbuf_4)
+     1    0.03                           uo_out[0] (net)
+                  0.08    0.00    3.40 v uo_out[0] (out)
+                                  3.40   data arrival time
+
+                         10.00   10.00   clock clk (rise edge)
+                          0.00   10.00   clock network delay (propagated)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -3.40   data arrival time
+-----------------------------------------------------------------------------
+                                  4.35   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= Typical Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= Typical Corner ===================================
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 93 unannotated drivers.
+ clk
+ ena
+ rst_n
+ ui_in[0]
+ ui_in[1]
+ ui_in[2]
+ ui_in[3]
+ ui_in[4]
+ ui_in[5]
+ ui_in[6]
+ ui_in[7]
+ uio_in[0]
+ uio_in[1]
+ uio_in[2]
+ uio_in[3]
+ uio_in[4]
+ uio_in[5]
+ uio_in[6]
+ uio_in[7]
+ _14_/X
+ _15_/X
+ _16_/X
+ _17_/X
+ _18_/X
+ _19_/X
+ _20_/X
+ _21_/X
+ _22_/X
+ _23_/X
+ _24_/X
+ _25_/X
+ _26_/X
+ _27_/X
+ _28_/X
+ _29_/X
+ _30_/X
+ _31_/X
+ _32_/X
+ _33_/X
+ _34_/X
+ _35_/X
+ input1/X
+ input10/X
+ input11/X
+ input12/X
+ input2/X
+ input3/X
+ input4/X
+ input5/X
+ input6/X
+ input7/X
+ input8/X
+ input9/X
+ output13/X
+ output14/X
+ output15/X
+ output16/X
+ output17/X
+ output18/X
+ output19/X
+ output20/X
+ tt_um_b08_mux_demux_21/HI
+ tt_um_b08_mux_demux_21/LO
+ tt_um_b08_mux_demux_22/HI
+ tt_um_b08_mux_demux_22/LO
+ tt_um_b08_mux_demux_23/HI
+ tt_um_b08_mux_demux_23/LO
+ tt_um_b08_mux_demux_24/HI
+ tt_um_b08_mux_demux_24/LO
+ tt_um_b08_mux_demux_25/HI
+ tt_um_b08_mux_demux_25/LO
+ tt_um_b08_mux_demux_26/HI
+ tt_um_b08_mux_demux_26/LO
+ tt_um_b08_mux_demux_27/HI
+ tt_um_b08_mux_demux_27/LO
+ tt_um_b08_mux_demux_28/HI
+ tt_um_b08_mux_demux_28/LO
+ tt_um_b08_mux_demux_29/HI
+ tt_um_b08_mux_demux_29/LO
+ tt_um_b08_mux_demux_30/HI
+ tt_um_b08_mux_demux_30/LO
+ tt_um_b08_mux_demux_31/HI
+ tt_um_b08_mux_demux_31/LO
+ tt_um_b08_mux_demux_32/HI
+ tt_um_b08_mux_demux_32/LO
+ tt_um_b08_mux_demux_33/HI
+ tt_um_b08_mux_demux_33/LO
+ tt_um_b08_mux_demux_34/HI
+ tt_um_b08_mux_demux_34/LO
+ tt_um_b08_mux_demux_35/HI
+ tt_um_b08_mux_demux_35/LO
+ tt_um_b08_mux_demux_36/HI
+ tt_um_b08_mux_demux_36/LO
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There are 16 unconstrained endpoints.
+  uio_oe[0]
+  uio_oe[1]
+  uio_oe[2]
+  uio_oe[3]
+  uio_oe[4]
+  uio_oe[5]
+  uio_oe[6]
+  uio_oe[7]
+  uio_out[0]
+  uio_out[1]
+  uio_out[2]
+  uio_out[3]
+  uio_out[4]
+  uio_out[5]
+  uio_out[6]
+  uio_out[7]
